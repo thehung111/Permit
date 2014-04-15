@@ -1,6 +1,8 @@
 {
     "name": "nth/permit",
     "description": "Bitwise based permission implementation for Lavarel 4.x",
+    "keywords": ["rbac", "Ngo Hung", "laravel", "php"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Ngo The Hung",
