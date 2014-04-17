@@ -27,17 +27,17 @@ class Permit implements \Nth\Permit\Interfaces\PermissionCheckerInterface
 
 	public function getRoleService()
 	{
-		return $roleService;
+		return $this->roleService;
 	}
 
 	public function getResourceActionService()
 	{
-		return $resourceActionService;
+		return $this->resourceActionService;
 	}
 
 	public function getResourcePermService()
 	{
-		return $resourcePermService;
+		return $this->resourcePermService;
 	}
 
 	
@@ -134,6 +134,8 @@ class Permit implements \Nth\Permit\Interfaces\PermissionCheckerInterface
 	}
 
 
+
+
 	/**
 	 * return list of role ids for current logged in user or array(Guest) role if not logged in
 	 * 
@@ -190,7 +192,7 @@ class Permit implements \Nth\Permit\Interfaces\PermissionCheckerInterface
 	{
 		if($this->isSignedIn())
 		{
-			$roles = getUserRoles() ;
+			$roles = $this->getUserRoles() ;
 			$superAdminRoleId = $this->getSuperAdminRoleId();
 			foreach ($roles  as $role) {
 				if($role->roleId == $superAdminRoleId  )
@@ -214,7 +216,7 @@ class Permit implements \Nth\Permit\Interfaces\PermissionCheckerInterface
 		if(empty($roleName) )
 			throw new \InvalidArgumentException('Role name must not be empty.');
 
-		$roles = getUserRoles() ;
+		$roles = $this->getUserRoles() ;
 			
 		foreach ($roles  as $role) {
 			if($role->name == $roleName  )
@@ -235,7 +237,7 @@ class Permit implements \Nth\Permit\Interfaces\PermissionCheckerInterface
 	 */
 	public function hasOwnerPermission( $actionName, $resourceName, $resourceInstancePK  )
 	{
-		$roleIdArr = $this->getUserRoles() ;
+		$roleIdArr = $this->getUserRoleIds() ;
 		$ownerId = $this->getUserId();
 		return $this->getResourcePermService()->hasPerm($roleIdArr, $actionName, $resourceName, $resourceInstancePK , true, $ownerId );
 	}
@@ -250,7 +252,7 @@ class Permit implements \Nth\Permit\Interfaces\PermissionCheckerInterface
 	 */
 	public function hasPermission($actionName, $resourceName, $resourceInstancePK = null)
 	{
-		$roleIdArr = $this->getUserRoles() ;
+		$roleIdArr = $this->getUserRoleIds() ;
 		$checkOwnerPerm = (!is_null($resourceInstancePK) );
 		$ownerId = $this->getUserId();
 		return $this->getResourcePermService()->hasPerm($roleIdArr, $actionName, $resourceName, $resourceInstancePK , $checkOwnerPerm, $ownerId );
