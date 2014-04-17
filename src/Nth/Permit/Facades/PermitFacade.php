@@ -1,6 +1,6 @@
 <?php
 
-namespace Nth\Permit\Facade;
+namespace Nth\Permit\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
