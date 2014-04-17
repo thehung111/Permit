@@ -4,6 +4,9 @@ namespace Nth\Permit\Helper;
 
 use Illuminate\Support\Facades\Config;
 
+/**
+ * Load Configuration
+ */ 
 class ConfigHelper{
 	
 	const db_prefix_config_key = "permit::db_prefix" ;

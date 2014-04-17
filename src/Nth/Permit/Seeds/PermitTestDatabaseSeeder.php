@@ -9,7 +9,9 @@ use Nth\Permit\Constants\RoleConstants;
 use Nth\Permit\Models\ResourcePerm;
 
 
-
+/**
+ * This seeder is only for unit testing. 
+ */ 
 class PermitTestDatabaseSeeder extends \Illuminate\Database\Seeder
 {
 	/**

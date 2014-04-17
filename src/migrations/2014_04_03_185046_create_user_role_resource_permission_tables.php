@@ -4,6 +4,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Nth\Permit\Helper\ConfigHelper;
 
+/**
+ * Migration. Create all the necessary tables. Must run database seeding afterwards to create all built in roles.
+ */ 
 class CreateUserRoleResourcePermissionTables extends Migration {
 
 	// reference for various commands: http://laravel.com/docs/schema

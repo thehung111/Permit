@@ -10,6 +10,9 @@ use Nth\Permit\Helper\ConfigHelper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
+/**
+ * Very important class that generate all the complex queries for permission checking.
+ */
 class ResourcePermService implements \Nth\Permit\Interfaces\ResourcePermServiceInterface
 {
 	function __construct(\Nth\Permit\Interfaces\RoleServiceInterface $roleService, 

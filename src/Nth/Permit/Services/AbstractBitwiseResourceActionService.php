@@ -8,7 +8,7 @@ use Nth\Permit\Helper\ConfigHelper;
 
 
 /**
- * This class will load resource action information from config file : perms.php 
+ * Abstract class that implements all common bitwise operations for add/remove permission 
  * 
  * @package Nth\Permit\Services
  */

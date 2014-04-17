@@ -180,6 +180,8 @@ The unit tests are run using sqlite in memory database from the main folder.
 		),
 ```
 
+Remember to run migration and seeding (use PermitTestDatabaseSeeder) to setup test data.
+
 2) Locate phpunit.xml under main app (not the package), add a test suite:
 
 ```

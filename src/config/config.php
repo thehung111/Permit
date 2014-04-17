@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Configuration
+ */ 
 return array(
 
 	/**

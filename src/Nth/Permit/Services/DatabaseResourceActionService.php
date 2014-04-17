@@ -9,7 +9,7 @@ use Nth\Permit\Models\ResourceAction;
 use Illuminate\Support\Facades\DB;
 
 /**
- * This class will load resource action information from config file : perms.php 
+ * This class will load resource action information from database resource_action table
  * 
  * @package Nth\Permit\Services
  */

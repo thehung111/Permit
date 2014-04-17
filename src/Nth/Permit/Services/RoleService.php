@@ -7,7 +7,9 @@ use Nth\Permit\Constants\RoleConstants;
 use Illuminate\Support\Facades\DB;
 use Nth\Permit\Helper\ConfigHelper;
 
-
+/**
+ * Exposes various ways to manage roles
+ */ 
 class RoleService implements \Nth\Permit\Interfaces\RoleServiceInterface
 {
 	/**

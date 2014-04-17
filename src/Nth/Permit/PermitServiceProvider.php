@@ -3,6 +3,9 @@
 use Illuminate\Support\ServiceProvider;
 use Nth\Permit\Helper\ConfigHelper;
 
+/**
+ * Permit Service Provider
+ */ 
 class PermitServiceProvider extends ServiceProvider {
 
 	/**

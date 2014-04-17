@@ -2,6 +2,9 @@
 
 namespace Nth\Permit\Constants;
 
+/**
+ * Role Constants for built in roles
+ */ 
 class RoleConstants
 {
 	/**

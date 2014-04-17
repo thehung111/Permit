@@ -6,6 +6,9 @@ use Nth\Permit\Models\Role;
 use Nth\Permit\Constants\RoleConstants;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
+/**
+ * Create all built-in roles for the package
+ */ 
 class PermitDatabaseSeeder extends \Illuminate\Database\Seeder
 {
 	/**
