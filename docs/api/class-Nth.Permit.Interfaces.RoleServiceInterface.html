@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface Nth\Permit\Interfaces\RoleServiceInterface</title>
+
+	<script type="text/javascript" src="resources/combined.js?2867089679"></script>
+	<script type="text/javascript" src="elementlist.js?3137373877"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li class="active"><a href="namespace-Nth.html">Nth<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Nth.Permit.html">Permit<span></span></a>
+						<ul>
+				<li><a href="namespace-Nth.Permit.Constants.html">Constants</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Exceptions.html">Exceptions</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Facades.html">Facades</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Helper.html">Helper</a>
+						</li>
+				<li class="active"><a href="namespace-Nth.Permit.Interfaces.html">Interfaces</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Models.html">Models</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Seeds.html">Seeds</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Services.html">Services</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Nth.Permit.Interfaces.PermissionCheckerInterface.html">PermissionCheckerInterface</a></li>
+				<li><a href="class-Nth.Permit.Interfaces.ResourceActionServiceInterface.html">ResourceActionServiceInterface</a></li>
+				<li><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html">ResourcePermServiceInterface</a></li>
+				<li class="active"><a href="class-Nth.Permit.Interfaces.RoleServiceInterface.html">RoleServiceInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nth.Permit.Interfaces.html" title="Summary of Nth\Permit\Interfaces"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface RoleServiceInterface</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Nth.Permit.Services.RoleService.html">Nth\Permit\Services\RoleService</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nth.html">Nth</a>\<a href="namespace-Nth.Permit.html">Permit</a>\<a href="namespace-Nth.Permit.Interfaces.html">Interfaces</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#5-114" title="Go to source code">Nth/Permit/Interfaces/RoleServiceInterface.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="addRole" id="_addRole">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addRole">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#7-13" title="Go to source code">addRole</a>( <span>string <var>$roleName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>add role by name. Return the newly created id</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>add role by name. Return the newly created id</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleName</var></dt>
+					<dd><code>string</code><br>$roleName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeRole" id="_removeRole">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeRole">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#15-21" title="Go to source code">removeRole</a>( <span>string <var>$roleName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>remove role by name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>remove role by name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleName</var></dt>
+					<dd><code>string</code><br>$roleName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="editRole" id="_editRole">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_editRole">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#24-31" title="Go to source code">editRole</a>( <span>integer <var>$roleId</var></span>, <span>string <var>$roleName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>update roleName</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>update roleName</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$roleName</var></dt>
+					<dd><code>string</code><br>$roleName</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRoleId" id="_getRoleId">
+
+		<td class="attributes"><code>
+			 public 
+			integer|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRoleId">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#34-40" title="Go to source code">getRoleId</a>( <span>string <var>$roleName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>get role id by name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get role id by name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleName</var></dt>
+					<dd><code>string</code><br>$roleName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRoleByName" id="_getRoleByName">
+
+		<td class="attributes"><code>
+			 public 
+			Role
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRoleByName">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#43-49" title="Go to source code">getRoleByName</a>( <span>string <var>$roleName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>get role by name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get role by name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleName</var></dt>
+					<dd><code>string</code><br>$roleName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Role</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGuestRole" id="_getGuestRole">
+
+		<td class="attributes"><code>
+			 public 
+			Role
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGuestRole">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#51-57" title="Go to source code">getGuestRole</a>( )</code>
+
+		<div class="description short">
+			
+<p>get guest role</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get guest role</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Role</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllRoles" id="_getAllRoles">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllRoles">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#59-64" title="Go to source code">getAllRoles</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get all roles</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all roles</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>of \Nth\Permit\Models\Role<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOwnerRoleId" id="_getOwnerRoleId">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOwnerRoleId">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#67-72" title="Go to source code">getOwnerRoleId</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the role id for "Owner" role</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the role id for "Owner" role</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGuestRoleId" id="_getGuestRoleId">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGuestRoleId">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#74-79" title="Go to source code">getGuestRoleId</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the role id for "Guest" role</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the role id for "Guest" role</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRegularUserRoleId" id="_getRegularUserRoleId">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRegularUserRoleId">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#81-86" title="Go to source code">getRegularUserRoleId</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the role id for "User" role, a logged in user</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the role id for "User" role, a logged in user</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSuperAdminRoleId" id="_getSuperAdminRoleId">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSuperAdminRoleId">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#88-93" title="Go to source code">getSuperAdminRoleId</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the role id for "Super Admin" role</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the role id for "Super Admin" role</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRoles" id="_getRoles">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRoles">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#96-102" title="Go to source code">getRoles</a>( <span>mixed <var>$userId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the role ids for a given userId</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the role ids for a given userId</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$userId</var></dt>
+					<dd><code>mixed</code><br>$userId</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRoleIds" id="_getRoleIds">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRoleIds">#</a>
+		<code><a href="source-class-Nth.Permit.Interfaces.RoleServiceInterface.html#105-111" title="Go to source code">getRoleIds</a>( <span>mixed <var>$userId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the role ids for a given userId</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the role ids for a given userId</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$userId</var></dt>
+					<dd><code>mixed</code><br>$userId</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

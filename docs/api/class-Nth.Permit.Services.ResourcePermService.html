@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nth\Permit\Services\ResourcePermService</title>
+
+	<script type="text/javascript" src="resources/combined.js?2867089679"></script>
+	<script type="text/javascript" src="elementlist.js?3137373877"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li class="active"><a href="namespace-Nth.html">Nth<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Nth.Permit.html">Permit<span></span></a>
+						<ul>
+				<li><a href="namespace-Nth.Permit.Constants.html">Constants</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Exceptions.html">Exceptions</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Facades.html">Facades</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Helper.html">Helper</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Interfaces.html">Interfaces</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Models.html">Models</a>
+						</li>
+				<li><a href="namespace-Nth.Permit.Seeds.html">Seeds</a>
+						</li>
+				<li class="active"><a href="namespace-Nth.Permit.Services.html">Services</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Nth.Permit.Services.AbstractBitwiseResourceActionService.html">AbstractBitwiseResourceActionService</a></li>
+				<li><a href="class-Nth.Permit.Services.ConfigFileResourceActionService.html">ConfigFileResourceActionService</a></li>
+				<li><a href="class-Nth.Permit.Services.DatabaseResourceActionService.html">DatabaseResourceActionService</a></li>
+				<li class="active"><a href="class-Nth.Permit.Services.ResourcePermService.html">ResourcePermService</a></li>
+				<li><a href="class-Nth.Permit.Services.RoleService.html">RoleService</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nth.Permit.Services.html" title="Summary of Nth\Permit\Services"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ResourcePermService</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Nth\Permit\Services\ResourcePermService</span></b>			
+			 implements 
+				<a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html"><span>Nth\Permit\Interfaces\ResourcePermServiceInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nth.html">Nth</a>\<a href="namespace-Nth.Permit.html">Permit</a>\<a href="namespace-Nth.Permit.Services.html">Services</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Nth.Permit.Services.ResourcePermService.html#13-588" title="Go to source code">Nth/Permit/Services/ResourcePermService.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#15-21" title="Go to source code">__construct</a>( <span><code><a href="class-Nth.Permit.Interfaces.RoleServiceInterface.html">Nth\Permit\Interfaces\RoleServiceInterface</a></code> <var>$roleService</var></span>, <span><code><a href="class-Nth.Permit.Interfaces.ResourceActionServiceInterface.html">Nth\Permit\Interfaces\ResourceActionServiceInterface</a></code> <var>$resourceActionService</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkAllInputsWithActionName" id="_checkAllInputsWithActionName">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkAllInputsWithActionName">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#24-41" title="Go to source code">checkAllInputsWithActionName</a>( <span>integer <var>$roleId</var></span>, <span>string <var>$actionName</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if inputs are missing or not valid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if inputs are missing or not valid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>string</code><br>$actionName</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkAllInputs" id="_checkAllInputs">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkAllInputs">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#43-60" title="Go to source code">checkAllInputs</a>( <span>integer <var>$roleId</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if inputs are missing or not valid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if inputs are missing or not valid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkInputs" id="_checkInputs">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkInputs">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#63-85" title="Go to source code">checkInputs</a>( <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if inputs are missing or not valid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if inputs are missing or not valid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResourcePerm" id="_getResourcePerm">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResourcePerm">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#87-106" title="Go to source code">getResourcePerm</a>( <span>integer <var>$roleId</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get back permissions that this role has for this resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get back permissions that this role has for this resource</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_getResourcePerm">Nth\Permit\Interfaces\ResourcePermServiceInterface::getResourcePerm()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResourcePerms" id="_getResourcePerms">
+
+		<td class="attributes"><code>
+			 public 
+			list
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResourcePerms">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#108-126" title="Go to source code">getResourcePerms</a>( <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get back permissions for this resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get back permissions for this resource</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>list</code><br>of ResourcePerm<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_getResourcePerms">Nth\Permit\Interfaces\ResourcePermServiceInterface::getResourcePerms()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOwnerResourcePerm" id="_getOwnerResourcePerm">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOwnerResourcePerm">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#130-141" title="Go to source code">getOwnerResourcePerm</a>( <span>string <var>$resourceName</var></span>, <span>string <var>$resourceInstancePK</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get owner permission for this resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get owner permission for this resource</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_getOwnerResourcePerm">Nth\Permit\Interfaces\ResourcePermServiceInterface::getOwnerResourcePerm()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addResourcePerm" id="_addResourcePerm">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addResourcePerm">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#143-161" title="Go to source code">addResourcePerm</a>( <span>integer <var>$roleId</var></span>, <span>string <var>$actionName</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Grants the role permission at the scope to perform the action on resources of
+the type $resourceName. If scope is all, then resourceInstancePK will be ignored
+(stored as null in database) If scope is instance, then resourceInstancePK is
+required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grants the role permission at the scope to perform the action on resources of
+the type $resourceName. If scope is all, then resourceInstancePK will be ignored
+(stored as null in database) If scope is instance, then resourceInstancePK is
+required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>string</code><br>$actionName</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_addResourcePerm">Nth\Permit\Interfaces\ResourcePermServiceInterface::addResourcePerm()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addResourcePermForRoleName" id="_addResourcePermForRoleName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addResourcePermForRoleName">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#163-180" title="Go to source code">addResourcePermForRoleName</a>( <span>string <var>$roleName</var></span>, <span>string <var>$actionName</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Grants the role permission at the scope to perform the action on resources of
+the type $resourceName. If scope is all, then resourceInstancePK will be ignored
+(stored as null in database) If scope is instance, then resourceInstancePK is
+required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grants the role permission at the scope to perform the action on resources of
+the type $resourceName. If scope is all, then resourceInstancePK will be ignored
+(stored as null in database) If scope is instance, then resourceInstancePK is
+required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleName</var></dt>
+					<dd><code>string</code><br>$roleName</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>string</code><br>$actionName</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_addResourcePermForRoleName">Nth\Permit\Interfaces\ResourcePermServiceInterface::addResourcePermForRoleName()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addResourcePerms" id="_addResourcePerms">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addResourcePerms">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#183-228" title="Go to source code">addResourcePerms</a>( <span>integer <var>$roleId</var></span>, <span>integer <var>$actionsBitwiseValue</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Grants the role permission at the scope to perform the actions on resources
+of the type $resourceName. If scope is all, then resourceInstancePK will be
+ignored (stored as null in database) If scope is instance, then
+resourceInstancePK is required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grants the role permission at the scope to perform the actions on resources
+of the type $resourceName. If scope is all, then resourceInstancePK will be
+ignored (stored as null in database) If scope is instance, then
+resourceInstancePK is required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$actionsBitwiseValue</var></dt>
+					<dd><code>integer</code><br>$actionsBitwiseValue</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_addResourcePerms">Nth\Permit\Interfaces\ResourcePermServiceInterface::addResourcePerms()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addResourcePermsForRoleName" id="_addResourcePermsForRoleName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addResourcePermsForRoleName">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#230-246" title="Go to source code">addResourcePermsForRoleName</a>( <span>integer <var>$roleName</var></span>, <span>integer <var>$actionsBitwiseValue</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Grants the role permission at the scope (by actionsBitwiseValue) to perform
+the actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grants the role permission at the scope (by actionsBitwiseValue) to perform
+the actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleName</var></dt>
+					<dd><code>integer</code><br>$roleName</dd>
+					<dt><var>$actionsBitwiseValue</var></dt>
+					<dd><code>integer</code><br>$actionsBitwiseValue</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_addResourcePermsForRoleName">Nth\Permit\Interfaces\ResourcePermServiceInterface::addResourcePermsForRoleName()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addResourcePermsByActionNames" id="_addResourcePermsByActionNames">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addResourcePermsByActionNames">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#249-265" title="Go to source code">addResourcePermsByActionNames</a>( <span>integer <var>$roleId</var></span>, <span>array <var>$actionNames</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Grants the role permission (by actionNames) at the scope to perform the
+actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grants the role permission (by actionNames) at the scope to perform the
+actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$actionNames</var></dt>
+					<dd><code>array</code><br>$actionNames (array of string)</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_addResourcePermsByActionNames">Nth\Permit\Interfaces\ResourcePermServiceInterface::addResourcePermsByActionNames()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setResourcePerms" id="_setResourcePerms">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setResourcePerms">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#267-300" title="Go to source code">setResourcePerms</a>( <span>integer <var>$roleId</var></span>, <span>integer <var>$actionsBitwiseValue</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Update the role permission (by actionsBitwiseValue) at the scope to perform
+the actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update the role permission (by actionsBitwiseValue) at the scope to perform
+the actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$actionsBitwiseValue</var></dt>
+					<dd><code>integer</code><br>$actionsBitwiseValue</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_setResourcePerms">Nth\Permit\Interfaces\ResourcePermServiceInterface::setResourcePerms()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setResourcePermsByActionNames" id="_setResourcePermsByActionNames">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setResourcePermsByActionNames">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#302-319" title="Go to source code">setResourcePermsByActionNames</a>( <span>integer <var>$roleId</var></span>, <span>array <var>$actionNames</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Update the role permission (by actionNames) at the scope to perform the
+actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update the role permission (by actionNames) at the scope to perform the
+actions on resources of the type $resourceName. If scope is all, then
+resourceInstancePK will be ignored (stored as null in database) If scope is
+instance, then resourceInstancePK is required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleId</var></dt>
+					<dd><code>integer</code><br>$roleId</dd>
+					<dt><var>$actionNames</var></dt>
+					<dd><code>array</code><br>$actionNames (array of string)</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_setResourcePermsByActionNames">Nth\Permit\Interfaces\ResourcePermServiceInterface::setResourcePermsByActionNames()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOwnerResourcePerms" id="_setOwnerResourcePerms">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOwnerResourcePerms">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#323-357" title="Go to source code">setOwnerResourcePerms</a>( <span>mixed <var>$ownerPK</var></span>, <span>integer <var>$actionsBitwiseValue</var></span>, <span>string <var>$resourceName</var></span>, <span>string <var>$resourceInstancePK</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Grant owner role permission (by actionsBitwiseValue) to perform the actions
+on resources of the type $resourceName. The role will be built in owner role,
+the scope is instance scope</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grant owner role permission (by actionsBitwiseValue) to perform the actions
+on resources of the type $resourceName. The role will be built in owner role,
+the scope is instance scope</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ownerPK</var></dt>
+					<dd><code>mixed</code><br>$ownerPK (depend on config file, the data type for ownerPK can be int or string)</dd>
+					<dt><var>$actionsBitwiseValue</var></dt>
+					<dd><code>integer</code><br>$actionsBitwiseValue</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_setOwnerResourcePerms">Nth\Permit\Interfaces\ResourcePermServiceInterface::setOwnerResourcePerms()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOwnerResourcePermsByActionNames" id="_setOwnerResourcePermsByActionNames">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOwnerResourcePermsByActionNames">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#359-373" title="Go to source code">setOwnerResourcePermsByActionNames</a>( <span>mixed <var>$ownerPK</var></span>, <span>array <var>$actionNames</var></span>, <span>string <var>$resourceName</var></span>, <span>string <var>$resourceInstancePK</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Grant owner role permission (by actionNames) to perform the actions on
+resources of the type $resourceName. The role will be built in owner role, the
+scope is instance scope</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grant owner role permission (by actionNames) to perform the actions on
+resources of the type $resourceName. The role will be built in owner role, the
+scope is instance scope</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ownerPK</var></dt>
+					<dd><code>mixed</code><br>$ownerPK (depend on config file, the data type for ownerPK can be int or string)</dd>
+					<dt><var>$actionNames</var></dt>
+					<dd><code>array</code><br>$actionNames</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_setOwnerResourcePermsByActionNames">Nth\Permit\Interfaces\ResourcePermServiceInterface::setOwnerResourcePermsByActionNames()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeResourcePerms" id="_removeResourcePerms">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeResourcePerms">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#379-396" title="Go to source code">removeResourcePerms</a>( <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var> = <span class="php-num">0</span></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Remove all resource permissions at the scope to resources of the type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Remove all resource permissions at the scope to resources of the type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_removeResourcePerms">Nth\Permit\Interfaces\ResourcePermServiceInterface::removeResourcePerms()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasAction" id="_hasAction">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasAction">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#400-418" title="Go to source code">hasAction</a>( <span><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code> <var>$resourcePermission</var></span>, <span><code><a href="class-Nth.Permit.Models.ResourceAction.html">Nth\Permit\Models\ResourceAction</a></code> <var>$resourceAction</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns true if the resource permission grants permission to perform the
+resource action</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns true if the resource permission grants permission to perform the
+resource action</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$resourcePermission</var></dt>
+					<dd><code><code><a href="class-Nth.Permit.Models.ResourcePerm.html">Nth\Permit\Models\ResourcePerm</a></code></code><br>$resourcePermission</dd>
+					<dt><var>$resourceAction</var></dt>
+					<dd><code><code><a href="class-Nth.Permit.Models.ResourceAction.html">Nth\Permit\Models\ResourceAction</a></code></code><br>$resourceAction</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_hasAction">Nth\Permit\Interfaces\ResourcePermServiceInterface::hasAction()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasPerm" id="_hasPerm">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasPerm">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#421-450" title="Go to source code">hasPerm</a>( <span>array <var>$roleIdArr</var></span>, <span>string <var>$actionName</var></span>, <span>string <var>$resourceName</var></span>, <span>string <var>$resourceInstancePK</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$checkOwnerPerm</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$ownerPK</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+		<div class="description short">
+			
+<p>Return true if the given roles have access to a resource by the action
+Internally, this method will check all the available scopes (first all scope
+then instance scope, etc) if $checkOwnerPerm is true, ownerPK must be provided.
+This is to verify that the user has the owner permission</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return true if the given roles have access to a resource by the action
+Internally, this method will check all the available scopes (first all scope
+then instance scope, etc) if $checkOwnerPerm is true, ownerPK must be provided.
+This is to verify that the user has the owner permission</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleIdArr</var></dt>
+					<dd><code>array</code><br>$roleIdArr</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>string</code><br>$actionName</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK optional</dd>
+					<dt><var>$checkOwnerPerm</var></dt>
+					<dd><code>boolean</code><br>$checkOwnerPerm</dd>
+					<dt><var>$ownerPK</var></dt>
+					<dd><code>mixed</code><br>$ownerPK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_hasPerm">Nth\Permit\Interfaces\ResourcePermServiceInterface::hasPerm()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasScopePerm" id="_hasScopePerm">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasScopePerm">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#453-467" title="Go to source code">hasScopePerm</a>( <span>array <var>$roleIdArr</var></span>, <span>string <var>$actionName</var></span>, <span>string <var>$resourceName</var></span>, <span>integer <var>$scope</var></span>, <span>string <var>$resourceInstancePK</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return true if given roles have access to a resource in a given scope</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return true if given roles have access to a resource in a given scope</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleIdArr</var></dt>
+					<dd><code>array</code><br>$roleIdArr</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>string</code><br>$actionName</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>integer</code><br>$scope</dd>
+					<dt><var>$resourceInstancePK</var></dt>
+					<dd><code>string</code><br>$resourceInstancePK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_hasScopePerm">Nth\Permit\Interfaces\ResourcePermServiceInterface::hasScopePerm()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasScopePerms" id="_hasScopePerms">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasScopePerms">#</a>
+		<code><a href="source-class-Nth.Permit.Services.ResourcePermService.html#470-557" title="Go to source code">hasScopePerms</a>( <span>array <var>$roleIdArr</var></span>, <span>string <var>$actionName</var></span>, <span>string <var>$resourceName</var></span>, <span>array <var>$scopeArr</var></span>, <span>array <var>$resourceInstancePKArr</var></span>, <span>boolean <var>$checkOwnerPerm</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$ownerPK</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return true of given roles have access to a resource based on a list of
+scopes. if $checkOwnerPerm is true, ownerPK must be provided. This is to verify
+that the user has the owner permission. This method cater for future
+enhancements when it needs to have more fine-grained permission hierarchy (more
+scopes than the default 2) e.g. If need permission for a property of an
+instance. For example, edit only title for a blog post If that is the case, more
+scopes will be needed</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return true of given roles have access to a resource based on a list of
+scopes. if $checkOwnerPerm is true, ownerPK must be provided. This is to verify
+that the user has the owner permission. This method cater for future
+enhancements when it needs to have more fine-grained permission hierarchy (more
+scopes than the default 2) e.g. If need permission for a property of an
+instance. For example, edit only title for a blog post If that is the case, more
+scopes will be needed</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$roleIdArr</var></dt>
+					<dd><code>array</code><br>$roleIdArr</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>string</code><br>$actionName</dd>
+					<dt><var>$resourceName</var></dt>
+					<dd><code>string</code><br>$resourceName</dd>
+					<dt><var>$scopeArr</var></dt>
+					<dd><code>array</code><br>$scopeArr</dd>
+					<dt><var>$resourceInstancePKArr</var></dt>
+					<dd><code>array</code><br>$resourceInstancePKArr</dd>
+					<dt><var>$checkOwnerPerm</var></dt>
+					<dd><code>boolean</code><br>$checkOwnerPerm</dd>
+					<dt><var>$ownerPK</var></dt>
+					<dd><code>mixed</code><br>$ownerPK</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nth.Permit.Interfaces.ResourcePermServiceInterface.html#_hasScopePerms">Nth\Permit\Interfaces\ResourcePermServiceInterface::hasScopePerms()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
