@@ -1,92 +1,245 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Permit : Bitwise based permission scheme for Lavarel 4.x" />
 
-  <title>Permit</title>
-  <meta name="description" content="Bitwise based permission scheme for Lavarel 4.x">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Permit</title>
+  </head>
 
-</head>
+  <body>
 
-<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/thehung111/Permit">View on GitHub</a>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Permit</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">Bitwise based permission scheme for Lavarel 4.x</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/thehung111/Permit/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/thehung111/Permit/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/thehung111/Permit" class="code">View Permit on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1 id="project_title">Permit</h1>
+          <h2 id="project_tagline">Bitwise based permission scheme for Lavarel 4.x</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/thehung111/Permit/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/thehung111/Permit/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="permit" class="anchor" href="#permit"><span class="octicon octicon-link"></span></a>Permit</h1>
+
+<p>A Laravel 4.x package that add Role Based Access Control (RBAC) using bitwise operations. This package borrows the idea from Liferay permission algorithm 6.</p>
+
+<p>Reference: <a href="http://www.liferay.com/web/guest/community/forums/-/message_boards/message/2380562">Liferay Permission Optimization Discussion</a></p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>1) Under <code>require</code> section of composer.json, add reference to permit package:</p>
+
+<pre><code>"require": {
+        "laravel/framework": "4.1.*",
+        "nth/permit": "dev-master"  // add this line
+    },
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>2) Run update command:</p>
+
+<pre><code>$ composer update
+</code></pre>
+
+<h1>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h1>
+
+<h2>
+<a name="register-provider--alias" class="anchor" href="#register-provider--alias"><span class="octicon octicon-link"></span></a>Register Provider &amp; Alias</h2>
+
+<p>Update <code>app/config/app.php</code> to register provider and alias: </p>
+
+<pre><code>'providers' =&gt; array(
+        ....
+        // register provider 
+        'Nth\Permit\PermitServiceProvider', 
+        ),
+
+'aliases' =&gt; array(
+        ....
+
+        // register alias for permit facade
+        'Permit' =&gt; 'Nth\Permit\Facades\PermitFacade',  
+
+    ),
+
+</code></pre>
+
+<h2>
+<a name="publish-configuration" class="anchor" href="#publish-configuration"><span class="octicon octicon-link"></span></a>Publish configuration</h2>
+
+<p>Run the below command to copy the default config from Permit package to main app:</p>
+
+<pre><code>$ php artisan config:publish nth/permit 
+</code></pre>
+
+<p>The configuration options in <code>config.php</code> are as below. Database table names can be configured.</p>
+
+<pre><code>&lt;?php
+
+return array(
+
+    /**
+     *  The name of user column in User table
+     *  This setting allow migration to create the user-role relationship table based on the primary key of user table 
+     */
+    'user_pk_column_name' =&gt; 'userId',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Data type for user primary key column
+    |--------------------------------------------------------------------------
+    |
+    |   This option allows you to specify the data type of user pk column
+    |
+    |   Supported options: "string", "integer", "bigInteger", "integer_unsigned", "bigInteger_unsigned"
+    |   If no option is provided, integer_unsigned will be used
+    |
+    */
+    'user_pk_column_data_type' =&gt; 'integer_unsigned',
+
+
+    // prefix for database tables to prevent conflict with other packages
+    'db_prefix' =&gt; 'nth', 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Database tables
+    |--------------------------------------------------------------------------
+    |   Configure the table names if necessary.
+    |   If database prefix is set, the prefix will be appended to the table name
+    |   e.g. if role_table_name is 'role' and db_prefix is 'nth', then table name for role is nth_role
+    |
+    */
+    'user_role_table_name' =&gt; 'user_role',
+    'role_table_name' =&gt; 'role',
+    'resource_action_table_name' =&gt; 'resource_action',
+    'resource_perm_table_name' =&gt; 'resource_perm' , // resource permission
+
+    /*
+    |--------------------------------------------------------------------------
+    | Data Provider
+    |--------------------------------------------------------------------------
+    |
+    |   This option allows you to specify where to load resource actions data from
+    |   "config_file" options will load the data from local config file : perms.php 
+    |   "database" file will load the data from database table: resource_action
+    |   
+    |   Supported options: "config_file", "database"
+    |
+    */
+    'action_data_provider' =&gt; 'config_file' ,
+
+);
+</code></pre>
+
+<p>Note that <code>Resource Actions</code> data can be loaded from local file (<code>perms.php</code>) or the database table. </p>
+
+<h2>
+<a name="create-initial-database-tables--data" class="anchor" href="#create-initial-database-tables--data"><span class="octicon octicon-link"></span></a>Create Initial Database Tables &amp; Data</h2>
+
+<p>1) First run migration to create the tables:</p>
+
+<pre><code>$ php artisan migrate --package="nth/permit"
+</code></pre>
+
+<p>2) Run database seeding:</p>
+
+<pre><code>$ php artisan db:seed --class="\Nth\Permit\Seeds\PermitDatabaseSeeder"
+</code></pre>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How It Works?</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>TODO: put in the schema and explain various concepts.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>The following tables are created:</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li><code>role</code></li>
+<li>
+<code>user_role</code> (the userid column datatype is mixed based on config file)</li>
+<li>
+<code>resource_action</code> (an action user can perform on a particular resource e.g. edit a blog post)</li>
+<li>
+<code>resource_perm</code> (the actual table that stores the permissions)</li>
+</ul><p>A resource represents a connection to an entity you want to perform the action. While a resource action describes what you want to do to the entity.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>E.g. Resource is "blog", resource actions can be "blog.add", "blog.edit", "blog.delete".</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>A resource permission consists of the following fields:</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li><p><code>resourceName</code> (e.g. 'patient')</p></li>
+<li><p><code>roleId</code> (e.g. 'doctor' who can view this particular 'patient' only if the patient is assigned to him. Or a 'patient' who can only view his own record)</p></li>
+<li><p><code>actionsBitwiseValue</code> : the sum of all actions this role can do i.e a AND bit operation for all the resource action bitwise value</p></li>
+<li><p><code>scope</code> : refers to whether this permission applies to all instances or only to individual instances (e.g. can a 'doctor' role view all patient records or only a particular record of his patient. Corresponds to <code>SCOPE_ALL</code> &amp; <code>SCOPE_INSTANCE</code> scenarios)</p></li>
+<li><p><code>resourceInstancePK</code>: if the scope is for individual instance, then a value must be set here e.g. the primary key of a 'patient'</p></li>
+<li><p><code>ownerPK</code> : the primary key of the owner of this object. This is necessary as after an object has been created, the owner must have access to this object.</p></li>
+</ul><h2>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
+<p>The unit tests are run using sqlite in memory database from the main folder.</p>
+
+<p>1) Under <code>app/config/testing/database.php</code>, configure as follow:</p>
+
+<pre><code>   'default' =&gt; 'sqlite',
+
+   'connections' =&gt; array(
+
+        'sqlite' =&gt; array(
+            'driver'   =&gt; 'sqlite',
+            'database' =&gt; ':memory:',
+            'prefix'   =&gt; '',
+        ),
+</code></pre>
+
+<p>Remember to run migration and seeding (use PermitTestDatabaseSeeder) to setup test data.</p>
+
+<p>2) Locate phpunit.xml under main app (not the package), add a test suite:</p>
+
+<pre><code> &lt;testsuites&gt;
+        &lt;testsuite name="Application Test Suite"&gt;
+            &lt;directory&gt;./app/tests/&lt;/directory&gt;
+        &lt;/testsuite&gt;
+
+         &lt;!-- Permit package --&gt;
+         &lt;testsuite name="Permit"&gt;
+            &lt;directory&gt;./workbench/nth/permit/tests/&lt;/directory&gt;
+        &lt;/testsuite&gt;
+
+    &lt;/testsuites&gt;
+</code></pre>
+
+<p>3) Run unit tests:</p>
+
+<pre><code>$ phpunit --testsuite=Permit
+</code></pre>
+      </section>
     </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/thehung111" class="avatar"><img src="https://avatars1.githubusercontent.com/u/1244152?s=60" width="48" height="48"/></a> <a href="https://github.com/thehung111">thehung111</a> maintains <a href="https://github.com/thehung111/Permit">Permit</a></p>
 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Permit maintained by <a href="https://github.com/thehung111">thehung111</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/thehung111/Permit/tarball/master" class="tar">tar</a><a href="https://github.com/thehung111/Permit/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+    
 
-  
-</body>
+  </body>
 </html>
