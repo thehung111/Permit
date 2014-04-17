@@ -179,6 +179,8 @@ class RoleService implements \Nth\Permit\Interfaces\RoleServiceInterface
 
 		return DB::table($role_table_name )
             		->join($user_role_table_name, $user_role_table_name . '.roleId', '=', $role_table_name .'.roleId')
+            		->where($user_role_table_name . '.userId', '=', $userId)
+            		->select($role_table_name . '.roleId', $role_table_name . '.name')
             		->get();
 	}
 
