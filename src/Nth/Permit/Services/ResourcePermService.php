@@ -222,8 +222,8 @@ class ResourcePermService implements \Nth\Permit\Interfaces\ResourcePermServiceI
 			$entry->resourceInstancePK = $resourceInstancePK;
 
 		$entry->actionsBitwiseValue = $this->resourceActionService->addPerm($entry->actionsBitwiseValue, $actionsBitwiseValue );
-		if($roleId == $ownerRoleId )
-			$entry->ownerPK = $ownerPK ;
+		// if($roleId == $ownerRoleId )
+		// 	$entry->ownerPK = $ownerPK ;
 
 
 		$entry->save();
