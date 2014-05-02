@@ -94,11 +94,10 @@ class ConfigFileResourceActionServiceTest extends PHPUnit_Framework_TestCase
 				array('actionName' => 'user.add'		, 'bitwiseValue' => 1),
 				array('actionName' => 'user.edit'		, 'bitwiseValue' => 2),
 				array('actionName' => 'user.delete'		, 'bitwiseValue' => 4),
-				array('actionName' => 'user.view'		, 'bitwiseValue' => 8),
+				array('actionName' => 'user.view'		, 'bitwiseValue' => 8)
 			);
 
-		// check that these 2 arrays are the same
-		$this->assertEmpty(array_merge(array_diff($arr, $result_arr), array_diff($result_arr, $arr)));
+		$this->assertEquals(count($result_arr) , count($arr));
 	}
 
 	public function testHasPerm_True()
